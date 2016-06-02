@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 #get memory info
 cat /proc/meminfo
