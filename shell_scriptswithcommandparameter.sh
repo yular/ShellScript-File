@@ -5,8 +5,8 @@ usage="$(basename $0) -i <input var>  -o <output var>"
 echo $usage
 
 while getopts "i:o:" arg
-    do
-        case ${arg} in
+do
+    case ${arg} in
             i)
                 INPUT=${OPTARG}
                 ;;
@@ -23,7 +23,7 @@ while getopts "i:o:" arg
                 echo "${usage}"
                 exit 1
                 ;;
-        esac
-    done
+    esac
+done
 
 echo "Input is "${INPUT}" and Output is "${OUTPUT}
